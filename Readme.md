@@ -22,5 +22,5 @@ Pick one card game(Solitaire, Hearts, Rummy, Cheat, BlackJack, Mahjong etc) that
 - Take care of UX and UI: Build [wireframes](https://en.wikipedia.org/wiki/Website_wireframe)
 - You may deploy your product on the cloud using [Github Pages](https://pages.github.com/). Original [2048](http://gabrielecirulli.github.io/2048/) game was actually hosted on Github Pages.
 
-## Guide
-[Click here to watch milestone guide](https://drive.google.com/open?id=1WxYQGMQIn9vhPenRMF0t0wQUl1jdeAgC)
+## BlackJack game rules
+Most people should be familiar with the concept of the game BlackJack. But if not, here is a quick overview. Essentially, players are dealt a starting hand of 2 cards with the hopes of getting to the magical number of 21, or to get as close to 21 as possible. If a player gets 21 on his initial hand, it is called a "blackjack" or a "natural". The player wins, unless the house reaches blackjack as well. The other ways to win are to hold a higher sum of cards at the end of the play than the house, or to have the house go over 21.
