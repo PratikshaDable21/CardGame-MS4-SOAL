@@ -42,3 +42,6 @@ function shuffle()
 
 	renderDeck();
 }
+
+getDeck();
+shuffle();
