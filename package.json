@@ -1,0 +1,22 @@
+{
+  "name": "ms_card-game_aquila_tep_online_full-time_2021_3",
+  "version": "1.0.0",
+  "description": "By the end of this milestone ensure that you\r  - [ ] write tests for any program you are ever going to build\r  - [ ] are able to create and use object prototypes in js\r  - [ ] have understood how everything is an object in js & how powerful it is\r  - [ ] have practiced refactoring methods for your code\r  - [ ] able to appreciate the importance of thinking of time and planning of the project\r  - [ ] learn and practice a few software design patterns like Don't-Repeat-Yourself etc",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/exponentsoftware/MS_Card-game_Aquila_Tep_Online_Full-time_2021_3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/exponentsoftware/MS_Card-game_Aquila_Tep_Online_Full-time_2021_3/issues"
+  },
+  "homepage": "https://github.com/exponentsoftware/MS_Card-game_Aquila_Tep_Online_Full-time_2021_3#readme",
+  "devDependencies": {
+    "jest": "^26.6.3"
+  }
+}
