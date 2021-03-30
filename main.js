@@ -1,11 +1,13 @@
 
         "use strict"
+        // Build your deck
         var suits = ["Spades", "Hearts", "Diamonds", "Clubs"];
         var values = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A"];
         var deck = new Array();
         var players = new Array();
         var currentPlayer = 0;
-
+        // The beauty of the Array is that it is stack by its nature.
+        //  So we can pop cards off the top with the built in Array pop() method.
         function createDeck()
         {
             deck = new Array();
@@ -34,7 +36,7 @@
                 players.push(player);
             }
         }
-
+        // Create Players UI
         function createPlayersUI()
         {
             document.getElementById('players').innerHTML = '';
@@ -58,6 +60,9 @@
                 document.getElementById('players').appendChild(div_player);
             }
         }
+        // Here is a a very quick shuffle algorithm.
+        //  For 1000 rounds we will be swapping two cards in random locations in the deck.
+
 
         function shuffle()
         {
@@ -73,7 +78,9 @@
                 deck[location2] = tmp;
             }
         }
-
+        // Start the game
+        // Now we're ready to start the game. 
+        // You can use the following function to begin the game and create all of the required objects.
         function startblackjack()
         {
             document.getElementById('btnStart').value = 'RESTART';
@@ -90,6 +97,11 @@
             document.getElementById('player_' + currentPlayer).classList.add('active');
         }
 
+        // Deal the hand
+        // As mentioned above, the game starts with a quick shuffle.
+        // And then the hands are dealt
+        // We'll be using the handy pop() method for this one, which returns to us the top most item in the stack.
+        // We'll push the cards to each players hands and then render the cards.
         function dealHands()
         {
             // alternate handing cards to each player
@@ -107,7 +119,9 @@
 
             updateDeck();
         }
-
+        // Render the cards
+        // This is the UI portion of card dealing. 
+        // Once a card is dealt to a particular it will need to be added to their 'hand'.
         function renderCard(card, player)
         {
             var hand = document.getElementById('hand_' + player);
@@ -153,6 +167,9 @@
             }
         }
 
+        // Hit me
+        // Now we're ready to start the game.
+        // This will pop a Card right out of our stack and will sum the Card value to the current users Total score.
         function hitMe()
         {
             // pop a card from the deck to the current player
@@ -164,7 +181,10 @@
             updateDeck();
             check();
         }
-
+        // If a player chooses to keep his hand, then the stay method will check if there are any more players in action, and if so,
+        // will transfer control over to them by updating the currentPlayer variable.
+        // If however, there are no players left,
+        // then the end method is called and points will be tallied up.
         function stay()
         {
             // move on to next player, if any
